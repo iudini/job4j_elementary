@@ -22,7 +22,7 @@ public class FitnessTest {
     @Test
     public void thenIvan90Nik90Then0() {
         int result = Fitness.calc(90, 90);
-        assertThat(result, is(0));
+        assertThat(result, is(1));
     }
 
     @Test
