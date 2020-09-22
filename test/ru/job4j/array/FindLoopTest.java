@@ -26,7 +26,7 @@ public class FindLoopTest {
         int[] data = new int[] {2, 12, 85, 0, 6, 12, 24, 2, 6};
         int el = 6;
         int start = 2;
-        int finish = 4;
+        int finish = 5;
         int result = FindLoop.indexOf(data, el, start, finish);
         assertThat(result, is(4));
     }
