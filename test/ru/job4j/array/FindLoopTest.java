@@ -20,4 +20,24 @@ public class FindLoopTest {
         int result = FindLoop.indexOf(data, el);
         assertThat(result, is(-1));
     }
+
+    @Test
+    public void indexOfRangeTrue() {
+        int[] data = new int[] {2, 12, 85, 0, 6, 12, 24, 2, 6};
+        int el = 6;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexOf(data, el, start, finish);
+        assertThat(result, is(4));
+    }
+
+    @Test
+    public void indexOfRangeFalse() {
+        int[] data = new int[] {2, 12, 85, 0, 6, 12, 24, 2, 6};
+        int el = 13;
+        int start = 0;
+        int finish = 6;
+        int result = FindLoop.indexOf(data, el, start, finish);
+        assertThat(result, is(-1));
+    }
 }
