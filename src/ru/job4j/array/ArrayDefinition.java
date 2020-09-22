@@ -13,8 +13,8 @@ public class ArrayDefinition {
         names[1] = "Daria";
         names[2] = "Niko";
         names[3] = "Eugenia";
-        for (int i = 0; i < names.length; i++) {
-            System.out.println(names[i]);
+        for (String name : names) {
+            System.out.println(name);
         }
     }
 }
